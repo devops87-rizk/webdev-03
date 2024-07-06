@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex;justify-content: center;">
+        <div>
+            <h2 id="judul">Belajar Javascript DOM</h2>
+            <p class="paragraf">Ini adalah pembelajaran Javascript DOM</p>
+        </div>
+
+    </div>
+</body>
+<script>
+    let elemen_judul = document.getElementById('judul')
+    elemen_judul.innerHTML = "Nusacodes"
+
+    let elemen_paragraf = document.getElementsByClassName('paragraf')
+    console.log(elemen_paragraf[0].innerHTML)
+</script>
+</html>

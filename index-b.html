@@ -9,16 +9,17 @@
     <div style="display: flex;justify-content: center;">
         <div>
             <h2 id="judul">Belajar Javascript DOM</h2>
-            <p class="paragraf">Ini adalah pembelajaran Javascript DOM</p>
+            <p id="paragraf">Ini adalah pembelajaran Javascript DOM A</p>
+            <p id="paragraf">Ini adalah pembelajaran Javascript DOM B</p>
         </div>
 
     </div>
 </body>
 <script>
     let elemen_judul = document.getElementById('judul')
-    elemen_judul.innerHTML = "Nusacodes"
+    elemen_judul.innerHTML = "Rayyan"
 
-    let elemen_paragraf = document.getElementsByClassName('paragraf')
+    let elemen_paragraf = document.querySelectorAll('#paragraf')
     console.log(elemen_paragraf[0].innerHTML)
 </script>
 </html>

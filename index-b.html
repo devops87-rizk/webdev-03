@@ -11,7 +11,12 @@
             <h2 id="judul">Belajar Javascript DOM</h2>
             <p id="paragraf">Ini adalah pembelajaran Javascript DOM A</p>
             <p id="paragraf">Ini adalah pembelajaran Javascript DOM B</p>
+            <div>
+                <button id="tombol-x" onclick="ubah_warna()">Click Me !</button>
+            </div>
         </div>
+
+        
 
     </div>
 </body>
@@ -23,7 +28,11 @@
     // class gunakan # (pagar)
     // ID pakai . (titik)
 
-    document.getElementById('judul').style.color = "red"
-    console.log(elemen_judul)
+    
+    // console.log(elemen_judul)
+
+    function ubah_warna(){
+        document.getElementById('judul').style.color = "red";
+    }
 </script>
 </html>
